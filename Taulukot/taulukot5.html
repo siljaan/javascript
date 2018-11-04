@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>taulukot5</title>
+</head>
+<body>
+<script>
+  let numerolista = [];
+  let numero=1;
+  let r;
+  let silmukka = true;
+
+
+    do {
+      numero = Number(prompt('Anna luku 1-1000 välillä.'));
+      if(numerolista.includes(numero)){
+        silmukka = false;
+      }
+      numerolista.push(numero);
+    } while (silmukka);
+
+  document.write(numero +' luku on jo annettu.');
+
+</script>
+</body>
+</html>

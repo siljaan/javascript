@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>taulukot4</title>
+</head>
+<body>
+<script>
+  let numero =1;
+  let numerolista = [];
+  while (numero !== 0) {
+    numero = Number(prompt('Anna luku.'));
+    numerolista.push(numero);
+  }
+  numerolista.sort(function(a, b){return b-a});
+  document.write(numerolista);
+</script>
+</body>
+</html>

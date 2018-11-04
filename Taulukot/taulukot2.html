@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>taulukot2</title>
+</head>
+<body>
+<script>
+  let nimilista = [];
+  let i,j;
+  maara = Number(prompt('Anna osallistujien määrä.'));
+
+  for(i=0; i < maara; i++) {
+    nimilista[i] = prompt('Anna nimi.');
+  }
+  for(j=0; j < maara; j++) {
+
+    document.write((j+1)+'. '+nimilista[j]+'<br>');
+  }
+
+
+</script>
+</body>
+</html>

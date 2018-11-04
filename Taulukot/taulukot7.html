@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>Taulukko 7</title>
+</head>
+<body>
+
+<script>
+  let ehdokkaidenmaara;
+  let aanestajienmaara, i;
+  let aani;
+  let aanestyslista = [];
+  let voittaja;
+
+  ehdokkaidenmaara = Number(prompt('Anna ehdokkaiden lukumäärä'));
+
+  for (i=1; i<= ehdokkaidenmaara; i++){
+    aanestyslista.push(0);
+  }
+
+  aanestajienmaara = Number(prompt('Anna äänestäjien lukumäärä'));
+
+  for (i=0; i<= aanestajienmaara-1; i++){
+
+    aani = Number(prompt('Anna äänesi yhdelle ehdokkaallesi antamalla ehdokkaan numero'));
+    aanestyslista[aani-1] = aanestyslista[aani-1]  + 1;
+  }
+
+  voittaja = aanestyslista.indexOf(Math.max.apply(null,aanestyslista)) + 1;
+  document.write('Voittaja on ehdokasnumero  ' + voittaja);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>taulukot6</title>
+</head>
+<body>
+<script>
+    let numerolista = [];
+    let numero = 1;
+    let mediaani;
+    while (numero!==0) {
+         numero = Number(prompt('Anna luku.'));
+         numerolista.push(numero);
+    }
+    mediaani = Math.floor(numerolista.length / 2);
+    numerolista.sort(function(a, b){return a-b});
+     
+    if (numerolista.length % 2 === 0) {
+      document.write(numerolista[mediaani]);
+    }
+    else {
+      document.write((numerolista[mediaani] + numerolista[mediaani+1]) /2.0);
+    }
+
+</script>
+</body>
+</html>
