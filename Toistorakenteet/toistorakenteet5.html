@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>toistorakenteet5</title>
+</head>
+<body>
+<script>
+    let i, result;
+    result = true;
+    luku = Number(prompt('Anna kokonaisluku'));
+    for (i = 2; i < luku; i++) {
+      if (luku % i === 0) {
+        result = false;
+        break;
+      }
+    }
+    if(result === true) {
+      document.write('Antamasi luku on alkuluku.');
+    }
+    else {
+      document.write('Antamasi luku ei ole alkuluku.');
+    }
+</script>
+</body>
+</html>
