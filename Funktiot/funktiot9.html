@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>funktiot9</title>
+</head>
+<body>
+<script>
+  const fibonacci = (numero) =>
+  {
+    let a = 1, b = 0, temp;
+
+    while (numero >= 0) {
+      temp = a;
+      a = a+b;
+      b = temp;
+      numero--;
+    }
+    return(b);
+  };
+
+  let luku;
+  luku = prompt('Monenko Fibonaccin lukujonossa esiintyvän luvun haluat?');
+  document.write(fibonacci(luku-1));
+</script>
+</body>
+</html>

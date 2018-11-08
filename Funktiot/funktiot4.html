@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>funktiot4</title>
+</head>
+<body>
+<script>
+  function maksimi(nro1, nro2, nro3) {
+    var max = 0;
+
+    if((nro1 >= nro2) && (nro1 >= nro3)) {
+      max = nro1;
+    }
+    else if((nro2 >= nro1) && (nro2 >= nro3)) {
+      max = nro2;
+    }
+    else {
+      max = nro3;
+    }
+    return max;
+  }
+
+  var numero1 = prompt('Syötä luku');
+  var numero2 = prompt('Syötä luku');
+  var numero3 = prompt('Syötä luku');
+
+  document.write(maksimi(numero1,numero2,numero3));
+</script>
+</body>
+</html>

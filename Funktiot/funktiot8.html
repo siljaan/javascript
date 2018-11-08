@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>funktiot8</title>
+</head>
+<body>
+<script>
+    function fibonacci (numero) {
+        let a = 1, b = 0, temp;
+
+        while (numero >= 0) {
+          temp = a;
+          a = a+b;
+          b = temp;
+          numero--;
+        }
+        document.write(b);
+    }
+
+    let luku;
+    luku = prompt('Monenko Fibonaccin lukujonossa esiintyvän luvun haluat?');
+    fibonacci(luku-1);
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>funktiot6</title>
+</head>
+<body>
+<script>
+
+    function vastaluku(nro) {
+        for (let i = 0; i<nro.length; i++) {
+          nro[i] = -nro[i];
+      }
+      document.write(nro);
+    }
+
+    let numerolista = [1, 2, 3, -4, 5, 6, -20, -37];
+    vastaluku(numerolista);
+
+</script>
+</body>
+</html>
