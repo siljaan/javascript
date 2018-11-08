@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>harjoitus6</title>
+</head>
+<body>
+<script>
+
+let leivi, naula, luoti;
+
+    luotipaino = 13.3;
+    naulapaino = 32 * 13.3;
+    leivipaino = 20 * 32 * 13.3;
+
+    let luoti = prompt('Kuinka monta luotia?');
+    let naula = prompt('Kuinka monta naulaa?');
+    let leivi = prompt('Kuinka monta leiviskää?');
+
+kokopaino = luoti * luotipaino + naula * naulapaino + leivi * leivipaino;
+kilogramma = Math.floor(kokopaino/1000);
+gramma = kokopaino - (kilogramma * 1000);
+
+    document.write('Massa nykymittojen mukaan: '+ kilogramma + ' kilogrammaa ja '+ gramma.toFixed(2) +' grammaa.');
+
+</script>
+</body>
+</html>

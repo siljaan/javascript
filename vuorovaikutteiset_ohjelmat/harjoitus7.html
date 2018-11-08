@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>harjoitus7</title>
+</head>
+<body>
+<script>
+
+saldo = prompt('Tilisi saldo.');
+korko = prompt('Kuinka suuri on vuosittainen korkoprosenttisi?');
+
+kertynytkorko = saldo * (korko/100);
+uusisaldo = +saldo + kertynytkorko;
+
+document.write('Vuodessa kertyneen koron määrä: ' + kertynytkorko.toFixed(1));
+document.write(' Saldosi on: '+ uusisaldo.toFixed(1));
+
+</script>
+</body>
+</html>
