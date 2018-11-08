@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>valintarakenne2</title>
+</head>
+<body>
+<script>
+    let nimi;
+    nimi = prompt('Mikä on nimesi?');
+    let random = Math.random();
+    if (random < 0.25) {
+      console.log(nimi +', olet Rohkelikko.');
+    }
+    else if (random <= 0.5 && random >= 0.25) {
+      console.log(nimi +', olet Luihuinen.');
+    }
+    else if (random <= 0.75 && random > 0.5) {
+      console.log(nimi +', olet Puuskupuh.');
+    }
+    else {
+      console.log(nimi +', olet Korpinkynsi.');
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>valintarakenne6</title>
+</head>
+<body>
+<script>
+    let vuosi;
+    vuosi = prompt('Anna vuosiluku.');
+
+    if (vuosi%400==0) {
+      document.write('Antamasi vuosi on karkausvuosi.');
+    }
+    else if (vuosi%4==0 && vuosi%100!=0) {
+      document.write('Antamasi vuosi on karkausvuosi.');
+    }
+    else {
+      document.write('Antamasi vuosi ei ole karkausvuosi.');
+    }
+
+</script>
+</body>
+</html>

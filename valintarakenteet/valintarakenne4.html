@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>valintarakenne4</title>
+</head>
+<body>
+<script>
+  var alkusaldo, hinta;
+
+  var alkusaldo = Number(prompt('Rahamääräsi: '));
+  var hinta = Number(prompt('Bussilipun hinta: '));
+
+  if (hinta <= alkusaldo) {
+    document.write('Hyvää matkaa. Sinulle jäi ' + (alkusaldo - hinta).toString() +' euroa.');
+  }
+  else if (alkusaldo > hinta) {
+    document.write('Et voi ostaa lippua.');
+  }
+  else {
+    document.write('Virhe');
+  }
+</script>
+</body>
+</html>

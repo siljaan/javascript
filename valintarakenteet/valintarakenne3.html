@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>valintarakenne3</title>
+</head>
+<body>
+<script>
+    let sukupuoli, arvo;
+    sukupuoli = prompt('Sukupuolesi (m/n)?');
+    if (sukupuoli === 'm') {
+
+    arvo = prompt('Mikä on hemoglobiiniarvosi?');
+
+        if (arvo < 134) {
+          console.log('Hemoglobiiniarvosi on alhainen.');
+        }
+        else if (arvo >= 134 && arvo <= 195) {
+            console.log('Hemoglobiiniarvosi on normaali.');
+        }
+        else if (arvo > 195) {
+          console.log('Hemoglobiiniarvosi on korkea.');
+        }
+    }
+    else if (sukupuoli === 'n') {
+
+      arvo = prompt('Mikä on hemoglobiiniarvosi?');
+
+      if (arvo < 117) {
+        console.log('Hemoglobiiniarvosi on alhainen.');
+      }
+      else if (arvo >= 117 && arvo <= 175) {
+        console.log('Hemoglobiiniarvosi on normaali.');
+      }
+      else if (arvo > 175) {
+        console.log('Hemoglobiiniarvosi on korkea.');
+      }
+    }
+    else {
+      console.log('Virhe');
+    }
+</script>
+</body>
+</html>

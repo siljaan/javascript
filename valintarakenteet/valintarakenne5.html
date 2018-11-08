@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <title>valintarakenne5</title>
+</head>
+<body>
+<script>
+if (window.confirm("Lasketaanko neliöjuuri?")) {
+  juuri = prompt("Syötä luku.");
+    if (juuri < 0) {
+      document.write('Negatiivisen luvun neliöjuuri ei ole määritelty');
+    }
+    else {
+      document.write('Luvun neliöjuuri on '+ Math.sqrt(juuri));
+    }
+}
+else {
+  document.write('false');
+}
+</script>
+</body>
+</html>
